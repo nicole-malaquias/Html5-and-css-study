@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Produtos  Bem - Estar</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<div class="caixa">
+				<h1><img src=./imagem/banner-produtos.png width="230" height="150"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home </a></li>
+						<li><a href="produtos.html">Produtos </a></li>
+						<li><a href="contato.html">Contatos </a></li>
+					</ul>
+			</nav>
+		    </div>
+		</header>
+
+		<main>
+			<form>
+				<fieldset class="container">
+					<div class="grupo">
+						<label for="nome">Nome e sobrenome</label>
+						<input type="text" id="nome"  class="form-1" required>
+					</div>
+
+					<div class="grupo">	
+						<label for="petname">Nome do Pet</label>
+						<input type="text" id="petname" class="form-1" required>
+					</div>
+
+					<div class="grupo">	
+						<label for="email">E-mail</label>
+						<input type="email" id="e-mail" required placeholder="nome.sobrenome@dominio.com" class="form-1"></div>
+
+					<div class="grupo">	
+						<label for="telefone">Telefone</label>
+						<input type="tel" id="telefone" required  placeholder="(12)95555555" class="form-1" >
+
+					<div class="grupo">	
+						<label for="mensagem">Mensagem</label>
+						<textarea cols="45" rows="5" id="mensagem" required class="form-1" ></textarea>
+					</div>	
+					
+				</fieldset>
+			
+
+				<fieldset class="container">
+					<legend>Como você gostaria de recebe nosso contato?</legend>
+					<label for="radio-telefone">  <input type="radio" name="checkbox1" value="telefone" id="radio-telefone"> Telefone   </label>
+					<label for="radio-email">    <input type="radio" name="checkbox1"  value="email" id="radio-email">    E-mail     </label>
+					<label for="radio-whats">    <input type="radio" name="checkbox1"  value="whats" id="radio-whats" checked="">     Whats      </label>
+				</fieldset>
+
+				<fieldset class="container">
+					<legend>Qual horario pefere ser atendido?</legend>
+
+					<select class="select-horario">
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox"> Você gostaria de receber nossas novidades?</label>
+				<input type="submit" value="Envie" class="MenuInput":>
+			</form>	
+		
+			<table class="tabela-expediente">
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h - 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h - 20h</td>
+					</tr>			
+					<tr>
+						<td>Sexta</td>
+						<td>8h - 20h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		
+		<footer class="copyright">
+				<img src=./imagem/footer.png width="80" height="80">
+				<p>&copy; Copyright PetShop Bem-Estar - 2020</p>
+		</footer>	
+	</body>
+</html>
+
+

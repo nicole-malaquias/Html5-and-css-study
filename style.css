@@ -1,0 +1,292 @@
+header{
+	background: #1BF3F5;/** cor do fundo do backgrrond da foto**/ 
+	padding: 20px 0;
+	
+}
+
+.caixa{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav{
+
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+
+nav li {
+	font-family: 'Caveat Brush', cursive;
+	display: inline;
+	margin:0 0 0 15px; /** margem **/
+	font-size: 30px;
+}
+
+nav a {  /** menu de navegalçao**/
+	text-transform: uppercase;  /** letra maiuscula **/
+	color: #f8980a;   /** cor da letra **/
+	font-weight: bold; /** deixa a fonte grossa **/
+	text-decoration: none; /** tirar o subrinhado **/
+	
+}
+ nav a:hover {
+ 	color: #C78C19;
+ 	text-decoration: underline;
+ }
+
+
+
+ /* produtos */
+.produtos{
+	width: 940px;
+	margin: 0 auto;	
+	padding: 50px 0;
+}
+.produtos li{
+	display: inline-block;  /** permite as figuras ocupar um espaço e por outra ao lado **/
+	text-align: center;  /** deixa as figuras alinhadas **/
+	width:32%;  /** afasta as figuras uma da outra **/
+	vertical-align: top; /** alinhar com a linha de cima **/
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #733a07;
+	margin: 0 0 0,8%;
+	padding: 30px 20px;
+	border:2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	color:#C78C19;
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19; /** deixa verde quando precionado **/
+	font-size: 40px;
+}
+
+.produto-preço{
+	font-size:22px;
+	font-weight: bold;
+	margin-top: 10px;  /** espaçamento do preço com a figura **/
+}
+
+
+
+/* roda pe */
+footer{
+	background: #1BF3F5;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.copyrigh p{
+	font-family: 'Pangolin', cursive;
+	margin-top:10px 0 0;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/* formulario*/
+
+
+.container{
+	margin: 30px 10px 30px;  
+}
+
+
+.grupo{
+	margin: 10px 0 10px;
+}
+
+.container label {
+	display: block;
+	margin: 1%;
+}
+
+.grupo input{
+	width: 40%;
+}
+
+
+.container legend{
+	margin:10px;
+}
+
+.select-horario{
+	margin:0 0 0 10px;
+}
+
+.tabela-expediente{
+	margin:auto;
+	margin-top:40px;
+	margin-bottom: 20px;
+}
+
+.tabela-expediente td, th, tr {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.tabela-expediente th{
+	font-weight: bold;
+	background-color: #EEE;
+	border: 1px solid #ccc;
+}
+
+
+
+/*css da pagina inicia */
+.banner {
+	width: 200px;
+	float: left;
+	
+
+}
+
+
+
+.titulos-principais{
+ 	text-align: center;
+ 	font-size: 40px;  /* em medida proporcianal para pixel */
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	clear: left; /* limpa o que tá acima que seria o float */
+ }
+
+
+
+.sobre-petshop h2{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.sobre-petshop p {
+	line-height: 20px;
+	font-size: 20px;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+
+
+.lista-beneficio  {   /* lista de beneficio */
+ 	width: 40%;           /* lista tem 40 para caber a imagem com 60*/
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	font-size: 20px;
+ 	line-height: 40px;
+
+ }
+
+.beneficios-imagem {   /* imagem do cachorro */
+	width: 60%;
+
+}
+
+
+
+
+
+
+
+
+/* css para deixar o site responsivo */
+
+
+
+@media screen and (max-width: 480px) {
+	main{
+		width: auto;
+	}
+	.caixa,  .cabecalho{
+		width: auto;
+	}
+
+	nav{  /* deixando o menu statico */
+		position: static;
+	}
+
+	nav a{
+		font-size: 20px;
+	}
+	h1 h2{
+		text-align: center;
+	}
+
+	/* pagina index */
+
+	.lista-beneficio {
+		text-align: center;
+		width: auto;
+		display: block;
+	}
+
+	.beneficios-imagem {
+		display: block;
+		margin: auto;
+	}
+	
+	.banner{
+		width: auto;
+	}
+
+	.conteudo-beneficios{
+		width: auto;
+	}	
+
+
+
+
+	/* produtos */
+	.produtos{
+		width: auto;
+	}
+	.produtos li{
+		display: block;
+		margin:auto;
+		width: 300px;   /* ajusta o tamanho da borda em volta da imagem e texto */
+	}
+
+	
+
+	/* responsividade da pagina contato */
+
+	.container{
+		text-align: center;
+	}
+	
+	.container input {
+		width:auto;
+		font-size: auto;
+	}
+
+	.select-horario{
+		margin:auto;
+	}
+	
+	.beneficios li{
+		text-align: center;
+	}
+
+
+	.banner {
+		width: 100%;
+	}
+
+}
